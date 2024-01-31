@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="pageTitle">Install {{appName}}</title>
+        <!-- Include Tailwind CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <!-- Include Google Fonts - Rubik and Montserrat -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="card">
+            <img src="{{logoPath}}" alt="{{appName}} Logo">
+            <h1 class="text-2xl mt-4" id="appName">Over-the-air Installation</h1>
+            <p class="mt-4">
+                Click on the button bellow to install the Development build of {{appName}}.<br>
+                Your device's UDID must have been previously registered for installation to work.
+            </p>
+            <a href="itms-services://?action=download-manifest&url={{baseUrl}}/assets/manifest.plist" class="mt-4" id="installButton">Install {{appName}}</a>
+        </div>
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>

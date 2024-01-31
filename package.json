@@ -1,0 +1,28 @@
+{
+    "name": "works.gago.ios-ota-installation-landing-page",
+    "version": "1.0.0",
+    "description": "Base iOS OTA installation page",
+    "main": "index.js",
+    "scripts": {
+        "build:css": "postcss src/css/styles.css -o dist/css/styles.css",
+        "build": "webpack && npm run build:css",
+        "start": "webpack serve --open"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.23.9",
+        "@babel/preset-env": "^7.23.9",
+        "babel-loader": "^9.1.3",
+        "copy-webpack-plugin": "^12.0.2",
+        "html-replace-webpack-plugin": "^2.6.0",
+        "html-webpack-plugin": "^5.6.0",
+        "html-webpack-tags-plugin": "^3.0.2",
+        "postcss": "^8.4.33",
+        "postcss-cli": "^11.0.0",
+        "postcss-loader": "^8.1.0",
+        "postcss-replace": "^2.0.1",
+        "react-dev-utils": "^12.0.1",
+        "webpack": "^5.90.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1"
+    }
+}

@@ -1,0 +1,43 @@
+
+body {
+    font-family: var(--font-family, 'Rubik', sans-serif);
+    text-align: center;
+    margin: 50px;
+    background: #F4F4F4;
+}
+h1 {
+    color: var(--primary-color, #007BFF);
+    font-weight: var(--title-font-weight, 500);
+}
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--card-bg-color, #fff);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+img {
+    width: 240px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--button-bg-color, #007BFF);
+    color: var(--button-text-color, #fff);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: var(--title-font-weight, 500);
+}

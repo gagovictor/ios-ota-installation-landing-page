@@ -1,0 +1,12 @@
+{
+  "appName": "Your App",
+  "fontFamily": "'Montserrat', sans-serif",
+  "titleFontWeight": 600,
+  "primaryColor": "#212124",
+  "cardBgColor": "#FFFFFF",
+  "buttonBgColor": "#212124",
+  "buttonTextColor": "#FFFFFF",
+  "baseUrl": "https://localhost:9000",
+  "logoPath": "assets/logo.png",
+  "ipaFilePath": "assets/your-app-build-artifact.ipa"
+}
